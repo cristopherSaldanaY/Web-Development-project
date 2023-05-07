@@ -1,0 +1,134 @@
+/* Estilos Generales */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Estilos del body */
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: #121127;
+    background-image: url("/src/assets/image-fondo.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* Estilos del navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+}
+
+.navbar-item{
+    display: flex;
+    align-items: center;
+    padding-left: 160px;
+    gap: 100px;
+
+}
+
+.navbar-item a{
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.26px;
+    color: #FFFFFF;
+}
+
+.navbar-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-theme {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95.61px;
+    height: 40px;
+    margin-right: 160.39px;
+    background-color: #121127;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+
+/* index.html card presentación */
+
+.home-container {
+    display: flex;
+    padding-top: 178px;
+    padding-left: 152px;
+    padding-bottom: 211px;
+}
+
+.card {
+    width: 628px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+}
+
+.card p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 32px;
+    color: #D0D0D0;
+}
+
+.card-item{
+    display: flex;
+    width: 525px;
+    height: 138px;
+    gap: 18px;
+}
+
+
+
+.card-item-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 371px;
+    height: 138px;
+}
+
+.card-item-title h1{
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 80px;
+    font-style: normal;
+    color: #42B5C3;
+    font-family: 'Raleway';
+
+}
+
+.card-item-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #F9F9FB;
+    font-family: "Poppins";
+}
+
+.image-dev{
+    width: 136px;
+    height: 136px;
+    border-radius: 200px;
+}
+
+
+
