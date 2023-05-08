@@ -286,4 +286,10 @@
 	body{
 		background-position: none;
 	}
+
+	.card p{
+		width: 350px;
+	}
+
+	
 }
