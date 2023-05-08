@@ -78,12 +78,17 @@
 	}
 
 	.navbar-item{
-		padding-left: 50px;
-		gap: 50px;
+		padding-left: 24px;
+		gap: 30px;
+		
+	}
+
+	.navbar-item a{
+		font-size: 16px;
 	}
 
 	.navbar-theme{
-		margin-right: 50px;
+		margin-right: 20px;
 	}
 
 	.home-container{
