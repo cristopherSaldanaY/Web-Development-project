@@ -193,6 +193,7 @@
 	
 	.card{
 		width: 438px;
+		height: 500px;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
