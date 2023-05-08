@@ -17,6 +17,7 @@ body {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: right top;
+    /* background-attachment: fixed; */
 }
 
 /* Estilos del navbar */
@@ -86,6 +87,20 @@ body {
     font-size: 27px;
     line-height: 32px;
     color: #D0D0D0;
+}
+
+.btn-blog {
+    width: 231px;
+    height: 70px;
+    background: #42B5C3;
+    border-radius: 55px;
+    font-size: 35px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 41px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .card-item{
