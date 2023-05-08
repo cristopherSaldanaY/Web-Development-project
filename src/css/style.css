@@ -132,3 +132,26 @@ body {
 
 
 
+footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 160px;
+    gap: 39px;
+    padding-bottom: 108px;
+}
+
+footer h2 {
+    font-size: 43px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800px;
+    line-height: 50px;
+    color: #42B5C3;
+}
+
+
+.footer-link{
+    display: flex;
+    gap: 28px;
+}

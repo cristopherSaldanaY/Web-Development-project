@@ -14,7 +14,6 @@
 	body{
 		background-position: right ;
 		background-size: 50% 100%;
-
 	}
 
 	.home-container{
@@ -27,15 +26,56 @@
 	}
 
 	.card{
-		width: 498px;
+		width: 478px;
 	}
 
 	.navbar-item{
 		padding-left: 50px;
+		gap:50px;
+	}
+
+	.navbar-item a {
+		font-size: 26px;
 	}
 
 	.navbar-theme{
 		margin-right: 47px;
+	}
+
+	.image-dev{
+		width: 100px;
+		height: 100px;
+	}
+
+	.card-item{
+		width: 100%;
+	}
+
+	.card-item-title{
+		height: 79px;
+	}
+
+	.card-item-title h1{
+		font-size: 45px;
+	}
+
+	.card-item-title h2{
+		font-size: 25px;
+	}
+
+	.card p{
+		font-size: 17px;
+	}
+
+
+	footer{
+		padding-left: 50px;
+		padding-bottom: 28px;
+
+	}
+
+	footer h2 {
+		font-size: 33px;
 	}
 
 }	
@@ -47,6 +87,23 @@
 		background-size: 50% 100%;
 	}
 
+	.card{
+		width: 358px;
+	}
+
+	.navbar-item{
+		padding-left: 50px;
+		gap:40px;
+	}
+
+	.navbar-item a {
+		font-size: 26px;
+	}
+
+	.navbar-theme{
+		margin-right: 47px;
+	}
+
 	.home-container{
 		padding-left: 50px;
 		padding-top: 0px;
@@ -56,18 +113,50 @@
 		align-items: center;
 	}
 
-	.card{
-		width: 358px;
+	.image-dev{
+		width: 100px;
+		height: 100px;
 	}
 
-	.navbar-item{
+	.card-item{
+		width: 100%;
+	}
+
+	.card-item-title{
+		height: 79px;
+	}
+
+	.card-item-title h1{
+		font-size: 45px;
+	}
+
+	.card-item-title h2{
+		font-size: 25px;
+	}
+
+	.card p{
+		font-size: 17px;
+	}
+
+	footer{
 		padding-left: 50px;
-		gap:50px;
+		padding-bottom: 28px;
+		gap: 20px;
+
 	}
 
-	.navbar-theme{
-		margin-right: 47px;
+	footer h2 {
+		font-size: 25px;
 	}
+
+	.footer-link {
+		gap: 20px;
+	}
+
+
+
+
+
 
 }	
 
@@ -75,6 +164,10 @@
 @media (max-width: 767px) {
 	body{
 		background-image: none;
+	}
+
+	.navbar{
+		padding-top: 7px;
 	}
 
 	.navbar-item{
@@ -93,6 +186,8 @@
 
 	.home-container{
 		padding-left: 0px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 		justify-content: center;
 	}
 	
@@ -131,6 +226,32 @@
 	.card p{
 		font-size: 13px;
 
+	}
+
+	footer{
+		padding-left: 0px;
+		padding-bottom: 0px;
+		gap: 20px;
+		justify-content: center;
+
+	}
+
+	footer h2 {
+		font-size: 25px;
+	}
+
+	.footer-link {
+		gap: 20px;
+	}
+
+	.link-item{
+		width: 40px;
+		height: 40px;
+	}
+
+	.link-item{
+		width: 23px;
+		height: 23px;
 	}
 
 }
