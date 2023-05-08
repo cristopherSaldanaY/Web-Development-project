@@ -92,10 +92,42 @@
 	}
 	
 	.card{
+		width: 438px;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 	}
+
+	.image-dev {
+		width: 80px;
+		height: 80px;
+	}
+
+	.card-item-title{
+		width: 200px;
+		height: 48px;
+	}
+
+
+	.card-item-title h1{
+		font-size: 34px;
+	}
+
+	.card-item-title h2 {
+		font-size: 16px;
+	}
+
+	.card-item{
+		justify-content: center;
+		height: 95px;
+		width: 100%;
+	}
+
+	.card p{
+		font-size: 13px;
+
+	}
+
 }
 
 @media (max-width: 634px) {
