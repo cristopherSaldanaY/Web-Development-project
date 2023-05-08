@@ -133,15 +133,15 @@
 	}
 
 	.card-item-title h1{
-		font-size: 45px;
+		font-size: 35px;
 	}
 
 	.card-item-title h2{
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.card p{
-		font-size: 17px;
+		font-size: 13px;
 	}
 
 	footer{
@@ -163,6 +163,7 @@
 		width: 130px;
 		height: 50px;
 		font-size: 20px;
+		margin-top: 20px;
 	}
 
 
@@ -291,5 +292,5 @@
 		width: 350px;
 	}
 
-	
+
 }
