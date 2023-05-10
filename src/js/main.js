@@ -1,6 +1,6 @@
 /* imports */
 import { dataPosts, dataPostsDetail } from "../utils/data.js";
-import { blogsCards } from "./nodes.js";
+import { blogsCards, blogContainer, homeLink, blogsLink } from "./nodes.js";
 
 /* theme */
 const moonItem = document.getElementById("moon");
@@ -33,7 +33,7 @@ const mapDataToCards = (data) => {
   return data.map(
     (item) => `
 
-    <div class="blog-card-item">
+    <div class="blog-card-item hidden">
         <figure><img class="image-blog" src="${item.imageCourse}" alt=""></figure>
         <div class="card-item-content">
             <div class="item-content-title">
@@ -41,7 +41,7 @@ const mapDataToCards = (data) => {
                 <h2>${item.title}</h2>
             </div>
             <p>${item.description}</p>
-            <div class="btn-blog-item" data-blog-id="${item.id}">see the post</div>
+            <div class="btn-blog-item style-btn" data-blog-id="${item.id}">see the post</div>
         </div>
     </div>
     `
@@ -62,14 +62,60 @@ const mapDataToBlogDetailed = (data, blogId) => {
   const otherBlogs = data.filter((item) => item.id !== blogId);
   const otherBlogsHtml = otherBlogs
     .map((blog) => {
-      return `<p><a href="blog.html?id=${blog.id}">${blog.title}</a></p>`;
+      return `<p class="other-links-item"><a href="blog.html?id=${blog.id}">- ${blog.title}</a></p>`;
     })
     .join("");
 
 
 
 
-  return ``
+  return `
+     
+      <div class="blog-container-description">
+        <div class="blog-title">
+            <div class="blog-title-item">
+                <h1>${title}</h1>
+            </div>
+        </div>
+        <div class="blog-card">
+            <figure><img class="image-blog-item" src="./src/assets/blog-img.png" alt=""></figure>
+            <div class="blog-content">
+                <h2>${subtitle}</h2>
+                <p id="parrafo">${description}</p>
+                    <div class="blog-item-btn style-btn"><p>Volver al Blog</p></div>
+            </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-item">
+            <div class="blog-title">
+                <div class="sidebar-title-item">
+                    <h1>Information</h1>
+                </div>
+            </div>
+            <p>Author: ${institution}</p>
+            <p>Posted: ${date}</p>
+        </div>
+        <div class="blog-title">
+            <div class="sidebar-title-item">
+                <h1>Other Blogs</h1>
+            </div>
+        </div>
+        <div class="other-blogs">
+          ${otherBlogsHtml}
+        </div>
+
+        <div class="sidebar-footer">
+            <h2>Follow Me</h2>
+            <div class="footer-link">
+                <a href="#"><img class="link-item" src="./src/assets/link-dark.png" alt=""></a>
+                <a href="#"><img class="link-item" src="./src/assets/github-dark.png" alt=""></a>
+                <a href="#"><img class="link-item" src="./src/assets/insta-dark.png" alt=""></a>
+            </div>
+        </div>
+      </div>
+
+  `
 };
 
 /* insert DOM blogs */
@@ -81,6 +127,12 @@ const insertCardsToDOM = () => {
 
 if (window.location.pathname.includes("blogs.html")) {
   insertCardsToDOM();
+  blogsLink.classList.add("active-link");
+}
+
+if(window.location.pathname.includes("index.html")){
+  console.log(homeLink)
+  homeLink.classList.add("active-link");
 }
 
 /* blog.html */
@@ -98,5 +150,40 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const parrafo = document.getElementById('parrafo');
-parrafo.innerHTML = parrafo.innerHTML.replace(/\./g, '.<br>');
+
+
+if (window.location.pathname.includes("blog.html")) {
+  const searchParams = new URLSearchParams(window.location.search);
+  const blogId = parseInt(searchParams.get('id'));
+  const template = mapDataToBlogDetailed(dataPostsDetail, blogId);
+
+  blogContainer.innerHTML = template;
+  
+}
+
+
+function showCard(card, delay) {
+  return new Promise(function(resolve) {
+    setTimeout(function() {
+      card.classList.remove("hidden");
+      card.classList.add("show");
+      resolve();
+    }, delay);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  var cards = Array.from(document.getElementsByClassName("blog-card-item"));
+  var delay = 200;
+
+  cards.reduce(function(promise, card) {
+    return promise.then(function() {
+      return showCard(card, delay);
+    });
+  }, Promise.resolve());
+});
+
+
+/* const parrafo = document.getElementById('parrafo');
+parrafo.innerHTML = parrafo.innerHTML.replace(/\./g, '.<br>'); */
+
