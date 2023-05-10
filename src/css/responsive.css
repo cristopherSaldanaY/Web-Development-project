@@ -239,7 +239,7 @@
 
 	footer{
 		padding-left: 0px;
-		padding-bottom: 0px;
+		padding-bottom: 40px;
 		gap: 20px;
 		justify-content: center;
 
@@ -278,15 +278,41 @@
 	.blog-container-description{
 		width: 100%;
 		padding-left: 24px;
+		padding-right: 20px;
 	}
 
 	.sidebar{
 		padding-top: 0px;
 		padding-left: 24px;
+		padding-right: 20px;
 	}
 
 	.sidebar-footer{
 		align-items: center;
+	}
+
+	.blog-title-item h1{
+		font-size: 20px;
+	}
+
+	.blog-content p{
+		font-size: 13px;
+	}
+
+	.sidebar-title-item h1{
+		font-size: 20px;
+	}
+
+	.sidebar-item p{
+		font-size: 14px;
+	}
+
+	.other-blogs {
+		gap: 0px
+	}
+
+	.other-links-item a{
+		font-size: 14px;
 	}
 
 
