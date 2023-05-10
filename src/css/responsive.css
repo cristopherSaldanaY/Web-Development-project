@@ -269,6 +269,27 @@
 		font-size: 18px;
 	}
 
+
+	/* blog */
+
+	.article-blog{
+		flex-direction: column;
+	}
+	.blog-container-description{
+		width: 100%;
+		padding-left: 24px;
+	}
+
+	.sidebar{
+		padding-top: 0px;
+		padding-left: 24px;
+	}
+
+	.sidebar-footer{
+		align-items: center;
+	}
+
+
 }
 
 @media (max-width: 634px) {
@@ -285,6 +306,10 @@
 
 	.card p{
 		width: 350px;
+	}
+
+	.btn-blog a{
+		font-size: 23px;
 	}
 
 
