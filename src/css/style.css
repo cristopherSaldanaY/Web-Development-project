@@ -151,7 +151,8 @@ footer h2 {
     cursor: pointer;
 }
 
-.btn-blog p{
+.btn-blog a{
+    text-decoration: none;
     font-size: 35px;
     font-family: 'Raleway';
     font-style: normal;
@@ -434,7 +435,8 @@ footer h2 {
     cursor: pointer;
 }
 
-.blog-item-btn p{
+.blog-item-btn a{
+    text-decoration: none;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;

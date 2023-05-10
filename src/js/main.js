@@ -82,7 +82,7 @@ const mapDataToBlogDetailed = (data, blogId) => {
             <div class="blog-content">
                 <h2>${subtitle}</h2>
                 <p id="parrafo">${description}</p>
-                    <div class="blog-item-btn style-btn"><p>Volver al Blog</p></div>
+                    <div class="blog-item-btn style-btn"><a href="/blogs.html">Volver al Blog</a></div>
             </div>
         </div>
       </div>
