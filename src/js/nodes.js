@@ -7,4 +7,8 @@ const blogContainer = document.getElementById('blogContainer');
 const homeLink = document.getElementById("home-link");
 const blogsLink = document.getElementById("blogs-link");
 
-export { moonItem, sunItem, blogsCards, blogContainer, homeLink, blogsLink };
+const btnLinkedin = document.getElementById('link-linkedin');
+const btnGithub = document.getElementById('link-github');
+const btnInstagram = document.getElementById('link-instagram');
+
+export { moonItem, sunItem, blogsCards, blogContainer, homeLink, blogsLink, btnGithub, btnInstagram, btnLinkedin };

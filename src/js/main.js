@@ -1,6 +1,6 @@
 /* imports */
 import { dataPosts, dataPostsDetail } from "../utils/data.js";
-import { blogsCards, blogContainer, homeLink, blogsLink, moonItem, sunItem } from "./nodes.js";
+import { blogsCards, blogContainer, homeLink, blogsLink, moonItem, sunItem, btnGithub, btnInstagram, btnLinkedin } from "./nodes.js";
 
 /* theme */
 const applyTheme = () => {
@@ -15,10 +15,21 @@ const applyTheme = () => {
   if (theme === "dark") {
     moonItem.src = "/src/assets/mon-light.png";
     sunItem.src = "/src/assets/sun-dark.png";
+
+    btnGithub.src = "./src/assets/github-dark.png"
+    btnInstagram.src = "./src/assets/insta-dark.png"
+    btnLinkedin.src = "./src/assets/link-dark.png";
+
   } else {
     moonItem.src = "/src/assets/mon-dark.png";
     sunItem.src = "/src/assets/sun-light.png";
+    
+    btnGithub.src = "./src/assets/github.png"
+    btnInstagram.src = "./src/assets/instagram.png"
+    btnLinkedin.src = "./src/assets/linkedin.png";
   }
+
+
 };
 
 /* events */
@@ -99,7 +110,7 @@ const mapDataToBlogDetailed = (data, blogId) => {
             <div class="blog-content">
                 <h2>${subtitle}</h2>
                 <p id="parrafo">${description}</p>
-                    <div class="blog-item-btn style-btn"><a href="/blogs.html">Volver al Blog</a></div>
+                    <div class="blog-item-btn style-btn"><a href="/blogs.html">Back to Blogs</a></div>
             </div>
         </div>
       </div>
@@ -122,14 +133,7 @@ const mapDataToBlogDetailed = (data, blogId) => {
           ${otherBlogsHtml}
         </div>
 
-        <div class="sidebar-footer">
-            <h2>Follow Me</h2>
-            <div class="footer-link">
-                <a href="#"><img class="link-item" src="./src/assets/link-dark.png" alt=""></a>
-                <a href="#"><img class="link-item" src="./src/assets/github-dark.png" alt=""></a>
-                <a href="#"><img class="link-item" src="./src/assets/insta-dark.png" alt=""></a>
-            </div>
-        </div>
+
       </div>
 
   `

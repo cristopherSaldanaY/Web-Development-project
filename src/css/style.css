@@ -522,3 +522,7 @@ footer h2 {
 .other-links-item a:hover{
     color: #42B5C3;
 }
+
+.footer-blog{
+    margin-top: 50px;
+}
