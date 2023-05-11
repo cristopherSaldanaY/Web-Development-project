@@ -267,10 +267,17 @@ footer h2 {
     visibility: hidden;
 }
 
-.image-blog{
-    width: 100%;
-    height: 100%;
+.card-img-content{
+    
+    width: 449px;
+    height: 264px;
+    margin-top: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+
 
 .card-item-content{
     display: flex;
@@ -353,8 +360,10 @@ footer h2 {
 }
 
 .image-blog-item{
-    width: 100%;
     height: 362px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 

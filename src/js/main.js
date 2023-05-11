@@ -66,14 +66,16 @@ const mapDataToCards = (data) => {
     (item) => `
 
     <div class="blog-card-item hidden">
-        <figure><img class="image-blog" src="${item.imageCourse}" alt=""></figure>
+        <div class="card-img-content" style="background-image: url('${item.imageCourse}')">
+          
+        </div>
         <div class="card-item-content">
             <div class="item-content-title">
                 <p>${item.tecnology}</p>
                 <h2>${item.title}</h2>
             </div>
             <p>${item.description}</p>
-            <div class="btn-blog-item style-btn" data-blog-id="${item.id}">see the post</div>
+            <div class="btn-blog-item style-btn" data-blog-id="${item.id}">Go to cert</div>
         </div>
     </div>
     `
@@ -106,11 +108,12 @@ const mapDataToBlogDetailed = (data, blogId) => {
             </div>
         </div>
         <div class="blog-card">
-            <figure><img class="image-blog-item" src="./src/assets/blog-img.png" alt=""></figure>
+            <div class="image-blog-item" style="background-image: url('${image}')">
+            </div>
             <div class="blog-content">
                 <h2>${subtitle}</h2>
                 <p id="parrafo">${description}</p>
-                    <div class="blog-item-btn style-btn"><a href="/blogs.html">Back to Blogs</a></div>
+                    <div class="blog-item-btn style-btn"><a href="/blogs.html">Back to Courses</a></div>
             </div>
         </div>
       </div>
@@ -121,12 +124,12 @@ const mapDataToBlogDetailed = (data, blogId) => {
                     <h2>Information</h2>
                 </div>
             </div>
-            <p>Author: ${institution}</p>
-            <p>Posted: ${date}</p>
+            <p>Institution: ${institution}</p>
+            <p>Date: ${date}</p>
         </div>
         <div class="blog-title">
             <div class="sidebar-title-item">
-                <h2>Other Blogs</h2>
+                <h2>Other Courses</h2>
             </div>
         </div>
         <div class="other-blogs">

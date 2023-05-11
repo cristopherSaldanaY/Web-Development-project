@@ -1,27 +1,27 @@
 const dataPosts = [
   {
     id: 1,
-    imageCourse: "./src/assets/image-blog.png",
-    tecnology: "NodeJS",
-    title: "Curso NodeJS",
+    imageCourse: "./src/assets/node-js.png",
+    tecnology: "TypeScript, Express",
+    title: "NodeJS",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a",
+      "I learned to develop rest APIs from the server side, applying the best good programming practices, solid principles and the most robust clean architectures for service scalability.",
   },
   {
     id: 2,
-    imageCourse: "./src/assets/image-blog.png",
-    tecnology: "Java",
+    imageCourse: "./src/assets/java-fundamentals.png",
+    tecnology: "Java, SpringBoot",
     title: "Java Fundamentals",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a",
+      "In this course I learned the necessary skills to get a job as a java developer. With this course I was able to understand Java extremely well and was able to create my own applications in Java.",
   },
   {
     id: 3,
-    imageCourse: "./src/assets/image-blog.png",
+    imageCourse: "./src/assets/web-development.png",
     tecnology: "HTML, CSS y JavaScript",
     title: "Web Development",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a",
+      "In this course I learned to build desktop and mobile websites from scratch applying the best practices of html5, css3, javascript and git/github",
   },
 ];
 
@@ -29,10 +29,18 @@ const dataPostsDetail = [
   {
     id: 1,
     title: "Node JS Advance",
-    image: "/src/assets/nodejs3.png",
+    image: "./src/assets/node-js.png",
     subtitle: "Node JS - TypeScript",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.",
+    description:`
+    In this course I learned and understood how the web works today,
+    how to create websites adapted to different interactive and functional devices,
+    handling tagging and HTML5 best practices, handling styles
+    graphics and good practices of CSS3, handling of Javascript basic - medium level.
+    In turn, I will learn to publish projects under version control
+    with GIT/Github and have the ability to handle new frameworks and
+    frontend libraries.
+    `
+      ,
     information: {
       institution: "Escalab Tech Hub",
       date: "01/03/2023",
@@ -42,10 +50,18 @@ const dataPostsDetail = [
   {
     id: 2,
     title: "Java Fundamentals",
-    image: "/src/assets/java.png",
+    image: "./src/assets/java-fundamentals.png",
     subtitle: "Java - SpringBoot",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.",
+    description:`
+    In this course I learned and understood how the web works today,
+    how to create websites adapted to different interactive and functional devices,
+    handling tagging and HTML5 best practices, handling styles
+    graphics and good practices of CSS3, handling of Javascript basic - medium level.
+    In turn, I will learn to publish projects under version control
+    with GIT/Github and have the ability to handle new frameworks and
+    frontend libraries.
+    `
+      ,
     information: {
       institution: "Escalab Tech Hub",
       date: "01/03/2023",
@@ -55,10 +71,18 @@ const dataPostsDetail = [
   {
     id: 3,
     title: "Web Development",
-    image: "/src/assets/html-css-javascript.png",
+    image: "./src/assets/web-development.png",
     subtitle: "HTML, CSS y JavaScript",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a.",
+    description:`
+      In this course I learned and understood how the web works today,
+      how to create websites adapted to different interactive and functional devices,
+      handling tagging and HTML5 best practices, handling styles
+      graphics and good practices of CSS3, handling of Javascript basic - medium level.
+      In turn, I will learn to publish projects under version control
+      with GIT/Github and have the ability to handle new frameworks and
+      frontend libraries.
+      `
+    ,
     information: {
       institution: "Escalab Tech Hub",
       date: "01/03/2023",
