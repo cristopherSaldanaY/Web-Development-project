@@ -7,6 +7,7 @@
 	.card{
 		width: 500px;
 	}
+	
 }
 
 /* Portrait tablets and medium desktops */
@@ -27,10 +28,11 @@
 
 	.card{
 		width: 478px;
+		margin-left: 0px;
 	}
 
 	.navbar-item{
-		padding-left: 50px;
+		margin-left: 50px;
 		gap:50px;
 	}
 
@@ -69,9 +71,10 @@
 
 
 	footer{
-		padding-left: 50px;
-		padding-bottom: 28px;
-
+		margin-left: 50px;
+		margin-bottom: 20px;
+		margin-top: 50px;
+		
 	}
 
 	footer h2 {
@@ -99,10 +102,12 @@
 
 	.card{
 		width: 358px;
+		margin-left: 0px;
 	}
 
 	.navbar-item{
 		padding-left: 50px;
+		margin-left: 0px;
 		gap:40px;
 	}
 
@@ -150,7 +155,10 @@
 
 	footer{
 		padding-left: 50px;
-		padding-bottom: 28px;
+		margin-left: 0px;
+		padding-bottom: 0px;
+		margin-top: 50px;
+		margin-bottom: 20px;
 		gap: 20px;
 
 	}
@@ -166,8 +174,11 @@
 	.btn-blog{
 		width: 130px;
 		height: 50px;
-		font-size: 20px;
 		margin-top: 20px;
+	}
+
+	.btn-blog a{
+		font-size: 20px;
 	}
 
 }	
@@ -351,5 +362,16 @@
 		font-size: 23px;
 	}
 
+	.navbar-item{
+		margin-left: 0px;
+	}
+
+	.card {
+		margin-left: 0px;
+	}
+
+	footer{
+		margin-left: 0px;
+	}
 
 }
