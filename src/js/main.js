@@ -209,9 +209,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   cards.forEach(function(card, index) {
     showCard(card, delay * index);
   });
-
-  const blogContainer = document.getElementById("blog-container");
-  blogContainer.classList.add("fade-in");
 });
 
 
