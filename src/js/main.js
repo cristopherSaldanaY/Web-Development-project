@@ -149,8 +149,8 @@ const insertCardsToDOM = () => {
 if (window.location.pathname.includes("blogs.html")) {
   insertCardsToDOM();
   blogsLink.classList.add("active-link");
-  const body = document.body;
-  body.style.zoom = '80%';
+/*   const body = document.body;
+  body.style.zoom = '80%'; */
 }
 
 if(window.location.pathname.includes("index.html")){
@@ -186,8 +186,8 @@ if (window.location.pathname.includes("blog.html")) {
   const parrafo = document.getElementById('parrafo');
   parrafo.innerHTML = parrafo.innerHTML.replace(/\./g, '.<br>'); 
 
-  const body = document.body;
-  body.style.zoom = '80%';
+/*   const body = document.body;
+  body.style.zoom = '80%'; */
   
 }
 
@@ -209,4 +209,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   cards.forEach(function(card, index) {
     showCard(card, delay * index);
   });
+
+  const blogContainer = document.getElementById("blog-container");
+  blogContainer.classList.add("fade-in");
 });
+
+
