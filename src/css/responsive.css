@@ -83,6 +83,10 @@
 		height: 50px;
 		font-size: 20px;
 	}
+	.btn-blog a{
+		font-size: 23px;
+	}
+
 
 }	
 
@@ -269,6 +273,11 @@
 		font-size: 18px;
 	}
 
+	.btn-blog a{
+		font-size: 23px;
+	}
+
+
 
 	/* blog */
 
@@ -325,6 +334,11 @@
 	body{
 		background-image: none;
 	}
+
+	.btn-blog a{
+		font-size: 23px;
+	}
+
 }	
 
 /* Landscape phones and smaller */

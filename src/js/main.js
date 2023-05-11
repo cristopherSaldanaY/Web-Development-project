@@ -184,6 +184,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 
-/* const parrafo = document.getElementById('parrafo');
-parrafo.innerHTML = parrafo.innerHTML.replace(/\./g, '.<br>'); */
+const parrafo = document.getElementById('parrafo');
+parrafo.innerHTML = parrafo.innerHTML.replace(/\./g, '.<br>'); 
 
