@@ -39,7 +39,7 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     /* background-attachment: fixed; */
-    zoom: 80%;
+
 }
 
 /* Estilos del navbar */
@@ -53,7 +53,7 @@ body {
 .navbar-item{
     display: flex;
     align-items: center;
-    padding-left: 160px;
+    margin-left: 100px;
     gap: 100px;
 
 }
@@ -93,9 +93,10 @@ footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 160px;
+    margin-left: 100px;
+    margin-bottom: 50px;
     gap: 39px;
-    padding-bottom: 108px;
+
 }
 
 footer h2 {
@@ -118,9 +119,6 @@ footer h2 {
 
 .home-container {
     display: flex;
-    padding-top: 178px;
-    padding-left: 152px;
-    padding-bottom: 211px;
 }
 
 .card {
@@ -130,6 +128,8 @@ footer h2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 21px;
+    margin-left: 100px;
+    margin-top: 47px;
 }
 
 .card p {
@@ -404,7 +404,7 @@ footer h2 {
     background-color: #3A55A5;
  }
 
- .sidebar-title-item h1 {
+ .sidebar-title-item h2 {
     font-size: 36px;
     font-family: 'Raleway';
     font-style: normal;
@@ -414,7 +414,7 @@ footer h2 {
     position: relative;
 }
   
-.sidebar-title-item h1::after {
+.sidebar-title-item h2::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -511,15 +511,14 @@ footer h2 {
 
 .other-links-item a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5); ;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway';
+    font-size: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 34px;
 }
 
 .other-links-item a:hover{
     color: #42B5C3;
 }
-
-
-
-
-
-

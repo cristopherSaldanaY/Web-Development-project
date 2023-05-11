@@ -1,29 +1,50 @@
 /* imports */
 import { dataPosts, dataPostsDetail } from "../utils/data.js";
-import { blogsCards, blogContainer, homeLink, blogsLink } from "./nodes.js";
+import { blogsCards, blogContainer, homeLink, blogsLink, moonItem, sunItem } from "./nodes.js";
 
 /* theme */
-const moonItem = document.getElementById("moon");
-const sunItem = document.getElementById("sun");
-
 const applyTheme = () => {
-  console.log("applying theme");
   const theme = localStorage.getItem("theme");
   const body = document.body;
 
+
+  
   body.classList.remove(theme === "dark" ? "light-theme" : "dark-theme");
   body.classList.add(theme === "dark" ? "dark-theme" : "light-theme");
+  
+  if (theme === "dark") {
+    moonItem.src = "/src/assets/mon-light.png";
+    sunItem.src = "/src/assets/sun-dark.png";
+  } else {
+    moonItem.src = "/src/assets/mon-dark.png";
+    sunItem.src = "/src/assets/sun-light.png";
+  }
 };
 
 /* events */
 moonItem.addEventListener("click", () => {
   moonItem.src = "/src/assets/mon-light.png";
   sunItem.src = "/src/assets/sun-dark.png";
+
+  const body = document.body;
+  body.classList.remove('light-theme');
+  body.classList.add('dark-theme');
+
+  localStorage.setItem('theme', 'dark');
+  applyTheme();
 });
 
 sunItem.addEventListener("click", () => {
   moonItem.src = "/src/assets/mon-dark.png";
   sunItem.src = "/src/assets/sun-light.png";
+
+  const body = document.body;
+  body.classList.remove("dark-theme");
+  body.classList.add("light-theme")
+
+  localStorage.setItem('theme', 'light');
+  applyTheme();
+
 });
 
 applyTheme();
@@ -65,10 +86,6 @@ const mapDataToBlogDetailed = (data, blogId) => {
       return `<p class="other-links-item"><a href="blog.html?id=${blog.id}">- ${blog.title}</a></p>`;
     })
     .join("");
-
-
-
-
   return `
      
       <div class="blog-container-description">
@@ -90,7 +107,7 @@ const mapDataToBlogDetailed = (data, blogId) => {
         <div class="sidebar-item">
             <div class="blog-title">
                 <div class="sidebar-title-item">
-                    <h1>Information</h1>
+                    <h2>Information</h2>
                 </div>
             </div>
             <p>Author: ${institution}</p>
@@ -98,7 +115,7 @@ const mapDataToBlogDetailed = (data, blogId) => {
         </div>
         <div class="blog-title">
             <div class="sidebar-title-item">
-                <h1>Other Blogs</h1>
+                <h2>Other Blogs</h2>
             </div>
         </div>
         <div class="other-blogs">
@@ -128,6 +145,8 @@ const insertCardsToDOM = () => {
 if (window.location.pathname.includes("blogs.html")) {
   insertCardsToDOM();
   blogsLink.classList.add("active-link");
+  const body = document.body;
+  body.style.zoom = '80%';
 }
 
 if(window.location.pathname.includes("index.html")){
@@ -156,8 +175,15 @@ if (window.location.pathname.includes("blog.html")) {
   const searchParams = new URLSearchParams(window.location.search);
   const blogId = parseInt(searchParams.get('id'));
   const template = mapDataToBlogDetailed(dataPostsDetail, blogId);
+  blogsLink.classList.add("active-link");
 
   blogContainer.innerHTML = template;
+
+  const parrafo = document.getElementById('parrafo');
+  parrafo.innerHTML = parrafo.innerHTML.replace(/\./g, '.<br>'); 
+
+  const body = document.body;
+  body.style.zoom = '80%';
   
 }
 
@@ -176,14 +202,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var cards = Array.from(document.getElementsByClassName("blog-card-item"));
   var delay = 200;
 
-  cards.reduce(function(promise, card) {
-    return promise.then(function() {
-      return showCard(card, delay);
-    });
-  }, Promise.resolve());
+  cards.forEach(function(card, index) {
+    showCard(card, delay * index);
+  });
 });
-
-
-const parrafo = document.getElementById('parrafo');
-parrafo.innerHTML = parrafo.innerHTML.replace(/\./g, '.<br>'); 
-

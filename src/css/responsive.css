@@ -257,15 +257,7 @@
 		gap: 20px;
 	}
 
-	.link-item{
-		width: 40px;
-		height: 40px;
-	}
 
-	.link-item{
-		width: 23px;
-		height: 23px;
-	}
 
 	.btn-blog{
 		width: 100px;
@@ -323,6 +315,10 @@
 
 	.other-links-item a{
 		font-size: 14px;
+	}
+
+	.sidebar-footer {
+		padding-left: 50px;
 	}
 
 	.sidebar-footer h2 {
